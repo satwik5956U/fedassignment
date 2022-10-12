@@ -23,10 +23,6 @@
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background: #111;
     height: auto;
     width: 100vw;
@@ -100,6 +96,7 @@
 
 .article {
     padding: 0 15px;
+    left:5%;
     width: 900px;
     max-width: 60%;
     background: transparent !important;
@@ -110,10 +107,12 @@
   }
   
 .aside {
-    top: 45px;
+    position:fixed;
+    top: 75px;
+    right:0px;
     background: rgba(0, 0, 0, 0.07);
     padding: 30px 10px;
-    max-width: 20%;
+    max-width: 30%;
     overflow: auto;
     z-index: 1;
   }
@@ -139,3 +138,20 @@
   aside {
     float: left;
   }
+.linelo{
+    display: inline;
+}
+.mainpage{
+    position:absolute;
+    left:10px;
+    width:73.5%;
+}
+span{
+    background-color: yellow;
+}
+p{
+    font-size: large;
+}
+.codediv{
+    background-color: antiquewhite;
+}
