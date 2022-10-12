@@ -2,6 +2,7 @@
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    width:100%;
     margin: 0 auto -6.25em;
 }
 
@@ -23,12 +24,13 @@
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: #111;
     height: auto;
-    position:absolute;
     width: 100vw;
-    top:1900px;
-    left:0px;
     padding-top: 40px;
     color: #fff;
 }
@@ -110,11 +112,11 @@
   }
   
 .aside {
-    height:100%;
-    width:22%;
-    position:fixed;
+    position:absolute;
     top: 75px;
-    left:0px;
+    right:0px;
+    height:auto;
+    width:22%;
     background: rgba(0, 0, 0, 0.07);
     padding: 30px 10px;
     max-width: 30%;
@@ -148,8 +150,10 @@
 }
 .mainpage{
     position:absolute;
-    left:25%;
+    right:25%;
     width:73.5%;
+    overflow-y: scroll;
+    height:55%;
 }
 span{
     background-color: yellow;
@@ -161,10 +165,15 @@ p{
     background-color: antiquewhite;
 }
 li{
-    padding-top: 30px;
+    padding-top: 10px;
 }
 button{
     background-image:-webkit-linear-gradient(white,rgb(190, 115, 168));
     width:125px;
     height:30px;
+}
+svg{
+    position:absolute;
+    height:100px;
+    left:0px;
 }

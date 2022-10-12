@@ -18,7 +18,7 @@ function App() {
 A Hook is a special function that lets you “hook into” React features. For example, <span>useState is a Hook that lets you add React state to function components. </span>
 You need this hook, every time you are writing a functional component, and you must define some state variables into that component.
     </p>
-    <p>
+    <div className='codediv'>
       import {`{`}useState{`}`} from react;<br/>
         function FavoriteColor(){`{`}<br/>
           const [color, setColor] = useState("");<br/>
@@ -28,7 +28,13 @@ You need this hook, every time you are writing a functional component, and you m
      
     const root = ReactDOM.createRoot(document.getElementById('root'));<br/>
     root.render({`<FavoriteColor />`});
-    </p>
+    </div>
+    <h3>
+      Output
+    </h3>
+    <div style={{border:'1px solid black'}}>
+      <h1>My favorite color is red!</h1>
+    </div>
     <h1>
       updating a state
     </h1>
@@ -49,6 +55,15 @@ You need this hook, every time you are writing a functional component, and you m
   {`}`}<br/>
 const root = ReactDOM.createRoot(document.getElementById('root'));<br/>
 root.render({`<FavoriteColor />`});
+</div>
+<h3>
+  Output
+</h3>
+<div style={{border:'1px solid black'}}>
+<h1>My favorite color is red!</h1>
+      <button
+        type="button"
+      >Blue</button>
 </div>
     <h1>
       What can state hold?
@@ -86,6 +101,15 @@ We could create multiple state Hooks to track individual values.
 
 {`const root = ReactDOM.createRoot(document.getElementById('root'));`}<br/>
 {`root.render(<Car />);`}
+    </div>
+    <h3>
+      Output
+    </h3>
+    <div style={{border:'1px solid black'}}>
+    <h1>My Ford</h1>
+      <p>
+      It is a red Mustang from 1964
+      </p>
     </div>
     <h1>Updating Objects and Arrays in State</h1>
     <p>
@@ -138,8 +162,18 @@ We can use the JavaScript spread operator to help us.
 {`const root = ReactDOM.createRoot(document.getElementById('root'));`}<br/>
 {`root.render(<Car />);`}<br/>
     </div>
-    <br/>
-    <br/>
+    <h3>
+      Output
+    </h3>
+    <div style={{border:'1px solid black'}}>
+    <h1>My Ford</h1>
+      <p>
+      It is a red Mustang from 1964
+      </p>
+      <button
+        type="button"
+      >Blue</button>
+    </div>
     <p>
     Because we need the current value of state, we pass a function into our setCar function. This function receives the previous value.
 
@@ -157,9 +191,8 @@ We then return an object, spreading the previousState and overwriting only the c
   
     <div className="mainpage">
       this is home page
-      <Footer/>
     </div>
-    
+    <Footer/>
       </div>
       )
   }
@@ -170,8 +203,8 @@ We then return an object, spreading the previousState and overwriting only the c
   
     <div className="mainpage">
       this is about page
-      <Footer/>
     </div>
+    <Footer/>
       </div>
       )
   }
@@ -182,9 +215,8 @@ We then return an object, spreading the previousState and overwriting only the c
   
     <div className="mainpage">
       this is porfolio page
-      <Footer/>
     </div>
-    
+    <Footer/>
       </div>
       )
   }
@@ -195,9 +227,8 @@ We then return an object, spreading the previousState and overwriting only the c
   
     <div className="mainpage">
       this is contacts page
-      <Footer/>
     </div>
-    
+    <Footer/>
       </div>
       )
   }
@@ -206,7 +237,7 @@ We then return an object, spreading the previousState and overwriting only the c
     <Router>
     <div className="wrapper">
       <Header />
-        <Route exact path="/" component={Main}/>
+        <Route exact path="/" component={Home}/>
         <Route path="/usestate" component={Usestateclick}/>
         <Route path="/home" component={Home}/>
         <Route path="/about" component={About}/>
