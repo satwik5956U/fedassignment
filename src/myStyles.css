@@ -25,7 +25,10 @@
 .footer {
     background: #111;
     height: auto;
+    position:absolute;
     width: 100vw;
+    top:1900px;
+    left:0px;
     padding-top: 40px;
     color: #fff;
 }
@@ -107,9 +110,11 @@
   }
   
 .aside {
+    height:100%;
+    width:22%;
     position:fixed;
     top: 75px;
-    right:0px;
+    left:0px;
     background: rgba(0, 0, 0, 0.07);
     padding: 30px 10px;
     max-width: 30%;
@@ -143,7 +148,7 @@
 }
 .mainpage{
     position:absolute;
-    left:10px;
+    left:25%;
     width:73.5%;
 }
 span{
@@ -154,4 +159,12 @@ p{
 }
 .codediv{
     background-color: antiquewhite;
+}
+li{
+    padding-top: 30px;
+}
+button{
+    background-image:-webkit-linear-gradient(white,rgb(190, 115, 168));
+    width:125px;
+    height:30px;
 }

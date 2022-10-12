@@ -9,6 +9,7 @@ import {useState} from 'react';
 function App() {
   const Usestateclick=()=>{
     return (
+      <div>
       <div className='mainpage'>
     <h1>React useState</h1>
     <p>
@@ -144,7 +145,8 @@ We can use the JavaScript spread operator to help us.
 
 We then return an object, spreading the previousState and overwriting only the color.
     </p>
-    <Footer/>
+      </div>
+      <Footer/>
       </div>
     )
     }
@@ -153,10 +155,11 @@ We then return an object, spreading the previousState and overwriting only the c
 
       <div>
   
-    <div className="article">
+    <div className="mainpage">
       this is home page
+      <Footer/>
     </div>
-    <Footer/>
+    
       </div>
       )
   }
@@ -165,10 +168,10 @@ We then return an object, spreading the previousState and overwriting only the c
 
       <div>
   
-    <div className="article">
+    <div className="mainpage">
       this is about page
+      <Footer/>
     </div>
-    <Footer/>
       </div>
       )
   }
@@ -177,10 +180,11 @@ We then return an object, spreading the previousState and overwriting only the c
 
       <div>
   
-    <div className="article">
+    <div className="mainpage">
       this is porfolio page
+      <Footer/>
     </div>
-    <Footer/>
+    
       </div>
       )
   }
@@ -189,10 +193,11 @@ We then return an object, spreading the previousState and overwriting only the c
 
       <div>
   
-    <div className="article">
+    <div className="mainpage">
       this is contacts page
+      <Footer/>
     </div>
-    <Footer/>
+    
       </div>
       )
   }
