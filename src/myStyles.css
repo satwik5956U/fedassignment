@@ -145,15 +145,12 @@
   aside {
     float: left;
   }
-.linelo{
-    display: inline;
-}
 .mainpage{
     position:absolute;
     right:25%;
     width:73.5%;
     overflow-y: scroll;
-    height:55%;
+    height:43%;
 }
 span{
     background-color: yellow;
@@ -176,4 +173,8 @@ svg{
     position:absolute;
     height:100px;
     left:0px;
+}
+label{
+    display:inline;
+    padding-left:15%;
 }
